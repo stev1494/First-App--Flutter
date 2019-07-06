@@ -11,6 +11,7 @@ class MyApp extends StatelessWidget {
     //context contiene informacion del arbol de widgets
 
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: Center(
           //child: HomePage(),
           child: ContadorPage(),
