@@ -39,17 +39,29 @@ int _conteo = 0;
 
           ),
 
-          floatingActionButton: FloatingActionButton(
-            child: Icon(Icons.add),
-            onPressed: (){
-                _conteo++;
-                setState(() {
-                  
-                });
+          floatingActionButton: _crearBotones(),
+          );
 
-            },
-          ),
+  }
+
+  Widget _crearBotones(){
+
+
+    return Row (
+      mainAxisAlignment: MainAxisAlignment.end,
+      children: <Widget>[
+            SizedBox( width: 30.0 ),
+            FloatingActionButton( child: Icon(Icons.account_balance), onPressed: null),
+            Expanded(child: SizedBox()),
+            FloatingActionButton( child: Icon(Icons.account_balance), onPressed: null,),
+            SizedBox( width: 10.0),
+            FloatingActionButton( child: Icon(Icons.account_balance), onPressed: null,),
+
+      ],
+
     );
+    
+
   }
 
 }
